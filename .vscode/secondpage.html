@@ -2,10 +2,57 @@
 <html>
     <head>
         <title>
- 
+        This is the second page 
         </title>
+        <style>
+            header
+{
+    text-align: center;color: blueviolet;
+}
+        </style>
+        <script>
+            function myFunction()
+            {
+                document.getElementById("parrot");
+                window.open("thirdpage.html");
+            }
+            function playerlost()
+            {
+                window.open("lose.html");
+            }
+        </script>
     </head>
     <body>
-    <h2>What bird can live the longest?</h2>
+        <div style="display: block; text-align: center;">
+            <header><h1>What bird can live the longest?</h1></header>
+    <section>
+        <span>
+            <div style="text-align: center;">
+        <div class="row" style="display: flex; align-items: center;">
+            
+            <div class="column" style="width: auto; padding: 50px;margin: 0px 150px 0px 150px;">
+            <h2>swan</h2>
+        <img id="swan" src="/images/_2secondTest/Swan.jpg" alt="ostrich not found" onClick=playerlost()></img>
+        </div>
+        <div class="column" style="width: auto; padding: 50px;margin: 0px 100px 0px 250px;">
+        <h2>budgie</h2>
+        <img id="budgie" src="/images/_2secondTest/budgie.jpg" alt="Emu not found" onclick=playerlost()></img>
+        </div>
+        </div>
+        <section class="row" style="display: flex; align-items: center;">
+        <div class="column" style="width: auto; padding: 50px;margin: 0px 100px 0px 150px;">
+         <h2>eagle</h2>
+        <img id="eagle" src="/images/_2secondTest/eagle.jpg" alt="Falco bird not found" onclick=playerlost()>
+        </div>
+        <div class="column" style="width: auto; padding: 50px;margin: 0px 100px 0px 300px;">
+            <h2>parrot</h2>
+           <img id="parrot" src="/images/_2secondTest/parrot.jpg" alt="penguin not found" onclick=myFunction()>
+           </div>
+        </section>
+        </div>
+    </span>
+    </div>
+    </section>
+</div>
     </body>
 </html>

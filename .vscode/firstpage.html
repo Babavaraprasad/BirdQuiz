@@ -17,8 +17,12 @@ header
 <script>
 function myFunction()
 {
-    document.getElementById("ostrich").style.color="red";
-    window.open("secondpage.html")
+    document.getElementById("ostrich");
+    window.open("secondpage.html");
+}
+function playerlost()
+{ 
+  window.open("lose.html"); 
 }
     </script>
 <body>
@@ -34,9 +38,19 @@ function myFunction()
     </div>
     <div class="column" style="width: auto; padding: 50px;margin: 0px 100px 0px 250px;">
     <h2>Emu</h2>
-    <img src="/images/_1firstTest/Emu.jpg" alt="Emu not found"></img>
+    <img id="Emu" src="/images/_1firstTest/Emu.jpg" alt="Emu not found" onclick=playerlost()></img>
     </div>
     </div>
+    <section class="row" style="display: flex; align-items: center;">
+    <div class="column" style="width: auto; padding: 50px;margin: 0px 100px 0px 150px;">
+     <h2>perigrine falcon</h2>
+    <img id="falcon" src="/images/_1firstTest/Falco_peregrinus.jpg" alt="Falco bird not found" onclick=playerlost()>
+    </div>
+    <div class="column" style="width: auto; padding: 50px;margin: 0px 100px 0px 300px;">
+        <h2>perigrine falcon</h2>
+       <img id="penguin" src="/images/_1firstTest/penguin.jpg" alt="penguin not found" onclick=playerlost()>
+       </div>
+    </section>
     </div>
 </span>
 </div>

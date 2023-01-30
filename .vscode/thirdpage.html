@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+        This is the third page 
+        </title>
+        <script>
+            function myFunction()
+            {
+                document.getElementById("parrot");
+                window.open("win.html");
+            }
+            function playerlost()
+            {
+                window.open("lose.html");
+            }
+        </script>
+        <style>
+            header{
+              text-align: center;
+              color: blueviolet;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="display: block;">
+    <header><h1>What bird can live the longest?</h1></header>
+    <section>
+        <span>
+            <div style="text-align: center;">
+        <div class="row" style="display: flex; align-items: center;">
+            
+            <div class="column" style="width: auto; padding: 50px;margin: 0px 150px 0px 150px;">
+            <h2>robin</h2>
+        <img id="robin" src="/images/_3thirdTest/robin.jpg" alt="ostrich not found" onClick=playerlost()></img>
+        </div>
+        <div class="column" style="width: auto; padding: 50px;margin: 0px 100px 0px 250px;">
+        <h2>hummingbird</h2>
+        <img id="hummingbird" src="/images/_3thirdTest/hummingbird.jpg" alt="Emu not found" onclick=myFunction()></img>
+        </div>
+        </div>
+        <section class="row" style="display: flex; align-items: center;">
+        <div class="column" style="width: auto; padding: 50px;margin: 0px 100px 0px 150px;">
+         <h2>wood pecker</h2>
+        <img id="woodpecker" src="/images/_3thirdTest/wood pecker.jpg" alt="Falco bird not found" onclick=playerlost()>
+        </div>
+        <div class="column" style="width: auto; padding: 50px;margin: 0px 100px 0px 300px;">
+            <h2>blue-jay</h2>
+           <img id="bluejay" src="/images/_3thirdTest/blue-jay.jpg" alt="penguin not found" onclick=playerlost()>
+           </div>
+        </section>
+        </div>
+    </span>
+    </div>
+    </section>
+</div>
+    </body>
+</html>
