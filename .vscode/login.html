@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>This is the login page</title>
+  </head>
+  <script>
+    function store() {
+      let firstname = document.getElementById("fname");
+      let lastname = document.getElementById("lname");
+      localStorage.setItem("first name", firstname.value);
+      localStorage.setItem("last name", lastname.value);
+    }
+  </script>
+  <body>
+    <form action="index.html" target="_blank" method="get">
+      <div>
+        <label for="fname">first name</label>
+        <input type="text" id="fname" name="fname" />
+      </div>
+      <div>
+        <label for="lname">last name</label>
+        <input type="text" id="lname" name="lname" />
+      </div>
+      <div>
+        <input type="submit" value="login" onclick="store()" />
+      </div>
+    </form>
+  </body>
+</html>
